@@ -16,11 +16,13 @@
 </div>
 
 <div class="col-xs-6">
+<% for @p in @posts %>
 <div class="panel panel-default">
 <div class="panel panel-body">
-<p> Tweets </p>
+<p> <%= @p.content %> </p>
 </div>
 </div>
+<% end %>
 </div>
 
 <div class= "col-xs-3">
@@ -29,17 +31,13 @@
 <p> Who To Follow</p>
 </div>
 </div>
+<div class="panel panel-default">
+<div class="panel panel-body">
+<p> trends </p>
+</div>
+</div >
 </div>
 </div>
 
 <!--row 2 begins here  -->
 
-<div class="row">
-<div class="col-xs-3 col-xs-offset-9">
-<div class="panel panel-default">
-<div class="panel panel-body">
-<p> trends </p>
-</div>
-</div>
-</div>
-</div>
